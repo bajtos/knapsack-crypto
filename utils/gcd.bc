@@ -1,0 +1,12 @@
+define gcd ( a,b ) {
+	auto c
+
+	if (b>a) { c=a; a=b; b=c; }
+	c=1;
+	while (c) {
+		c=a%b;
+		a=b; b=c;
+	}
+
+	return(a)
+}
